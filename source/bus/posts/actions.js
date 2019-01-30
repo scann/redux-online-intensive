@@ -11,7 +11,7 @@ export const fillPosts = (posts) => {
     };
 };
 
-export const fetchPostsAsync = () => async (dispatch) => {
+export const fetchPostsAsync = () => async (dispatch, getState) => {
     dispatch({
         type: FETCH_POSTS_ASYNC,
     });
