@@ -1,2 +1,2 @@
-export { worker } from './worker';
+export { signup } from './signup';
 
