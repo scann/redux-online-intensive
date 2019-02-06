@@ -3,5 +3,6 @@ export const types = {
     AUTHENTICATE: 'AUTHENTICATE',
 
     //Async
+    LOGIN_ASYNC:  'LOGIN_ASYNC',
     SIGNUP_ASYNC: 'SIGNUP_ASYNC',
 };
