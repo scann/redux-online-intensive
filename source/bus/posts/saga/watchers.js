@@ -16,6 +16,6 @@ export function* watchFetchPosts () {
 }
 
 export function* watchPosts () {
-    yield all([call(watchCreatePost, watchFetchPosts)]);
+    yield all([call(watchCreatePost), call(watchFetchPosts)]);
 }
 
