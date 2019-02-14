@@ -47,12 +47,12 @@ export default class App extends Component {
         socket.removeListener('disconnect');
     }
     render () {
-        const { isAuthenticated, isInitialized } = this.props;
+        const { isAuthenticated, isInitialized, listenPosts } = this.props;
 
         if (!isInitialized) {
             return <Loading />;
         }
 
-        return isAuthenticated ? <Private /> : <Public />;
+        return isAuthenticated ? <Private listenPosts = { listenPosts } /> : <Public />;
     }
 }
