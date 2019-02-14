@@ -14,6 +14,9 @@ import { Loading } from '../components';
 //Actions
 import { authActions } from '../bus/auth/actions';
 
+//Websocket
+import { joinSocketChannel } from '../init/socket';
+
 const mapStateToProps = (state) => {
     return {
         isAuthenticated: state.auth.get('isAuthenticated'),
@@ -31,6 +34,7 @@ const mapDispatchToProps = {
 export default class App extends Component {
     componentDidMount () {
         this.props.initializeAsync();
+        joinSocketChannel();
     }
     render () {
         const { isAuthenticated, isInitialized } = this.props;
