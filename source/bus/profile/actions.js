@@ -10,7 +10,7 @@ export const profileActions = {
     },
     clearProfile: () => {
         return {
-            type:    types.CLEAR_PROFILE,
+            type: types.CLEAR_PROFILE,
         };
     },
 };
