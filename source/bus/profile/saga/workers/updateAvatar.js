@@ -7,7 +7,6 @@ import { api } from '../../../../REST';
 import { uiActions } from '../../../ui/actions';
 import { profileActions } from '../../../profile/actions';
 
-
 export function* updateAvatar ({ payload: [newAvatar] }) {
     try {
         yield put(uiActions.startFetching());
