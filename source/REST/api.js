@@ -94,7 +94,7 @@ export const api = {
             return fetch(`${MAIN_URL}/image`, {
                 method:  'POST',
                 headers: {
-                    Authorization:  this.token,
+                    Authorization: this.token,
                 },
                 body: avatarFormData,
             });
