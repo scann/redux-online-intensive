@@ -5,5 +5,4 @@ export const types = {
 
     //Async
     FETCH_USERS_ASYNC: 'FETCH_USERS_ASYNC',
-
 };

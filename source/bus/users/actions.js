@@ -9,6 +9,7 @@ export const usersActions = {
             payload: users,
         };
     },
+
     clearUsers: () => {
         return {
             type: types.CLEAR_USERS,

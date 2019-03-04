@@ -24,10 +24,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators({
-            ...postsActions,
-            ...usersActions,
-        }, dispatch),
+        actions: bindActionCreators({ ...postsActions, ...usersActions }, dispatch),
     };
 };
 
