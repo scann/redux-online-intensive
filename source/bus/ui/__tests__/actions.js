@@ -10,6 +10,14 @@ describe('ui actions:', () => {
         expect(uiActions.stopFetching()).toMatchSnapshot();
     });
 
+    test('setOnlineState', () => {
+        expect(uiActions.setOnlineState()).toMatchSnapshot();
+    });
+
+    test('setOfflineState', () => {
+        expect(uiActions.setOfflineState()).toMatchSnapshot();
+    });
+
     test('emitError', () => {
         expect(uiActions.emitError(__.error)).toMatchSnapshot();
     });
